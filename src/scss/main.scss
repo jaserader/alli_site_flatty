@@ -4,11 +4,8 @@
   font-weight: 200;
 }
 
-.app{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 900px;
+body{
+  margin: 0;
 }
 
 .container{
@@ -73,6 +70,7 @@
   border: 12px solid #fff;
   outline: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .photo-link:hover{
