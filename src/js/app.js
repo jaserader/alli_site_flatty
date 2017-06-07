@@ -1,15 +1,18 @@
+var $ = require('jquery');
+var PhotoSwipe = require('photoswipe');
+
 var openPhotoSwipe = function() {
     var pswpElement = document.querySelectorAll('.pswp')[0];
 
     // build items array
     var items = [
         {
-            src: 'img/test_image.jpg',
-            w: 964,
-            h: 1024
+            src: 'http://res.cloudinary.com/dko7z8caf/image/upload/c_crop,h_200,w_200,x_276,y_87/v1496848820/sample.jpg',
+            w: 200,
+            h: 200
         },
         {
-            src: 'img/test_image.jpg',
+            src: 'http://res.cloudinary.com/dko7z8caf/image/upload/c_scale,h_683,w_1024,x_276,y_87/v1496848820/sample.jpg',
             w: 1024,
             h: 683
         },

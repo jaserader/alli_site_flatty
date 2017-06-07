@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72vh;
+}
+
+.gallery-aligner{
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.photo-link{
+  display: flex;
+  align-content: space-around;
+  height: auto;
+  width: auto;
+  border: 12px solid #fff;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.photo-link:hover{
+  transition: all 0.35s;
+  border-color: $pink-hover;
+  border-radius: 3px;
+}
+
+.photo{
+  display: flex;
+  height: 215px;
+  width: auto;
+  border: 3px $border-gray solid;
+  border-radius: 3px;
+}

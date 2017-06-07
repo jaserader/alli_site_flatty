@@ -1,0 +1,28 @@
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid $border-gray;
+}
+
+.footer-nav{
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-link{
+  display:inline-block;
+  width:auto;
+  float:none;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  color: $pink;
+  font-size: 30px;
+}
+
+.footer-link:hover{
+  transition: all 0.35s;
+  color: $pink-hover;
+}

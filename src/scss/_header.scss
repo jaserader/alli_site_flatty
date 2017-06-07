@@ -1,0 +1,40 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 750px;
+  padding-top: 20px;
+}
+
+.header-logo{
+  background-image: url("../img/logo_photography.png");
+  background-size: contain;
+  height: 130px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-link{
+  display: flex;
+  text-decoration: none;
+  width: auto;
+  color: $pink;
+  font-size: 24px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.header-link:hover{
+  transition: all 0.35s;
+  color: $pink-hover;
+}
