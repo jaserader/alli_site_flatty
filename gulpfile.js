@@ -6,6 +6,7 @@ var vueify = require('gulp-vueify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var del = require('del');
+var ttf2woff = require('gulp-ttf2woff');
 // var ghPages = require('gulp-gh-pages');
 
 gulp.task('lint', function() {
@@ -33,10 +34,18 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('ttf2woff', function(){
+  gulp.src(['src/fonts/*.ttf'])
+    .pipe(ttf2woff())
+    .pipe(gulp.dest('dist/css/fonts'));
+});
+
 gulp.task('watch', function() {
   gulp.watch(['src/**/*.js'], ['lint','babel']);
   gulp.watch(['src/scss/*.scss'], ['sass']);
   gulp.watch(['src/index.html'], ['copy']);
+  gulp.watch(['src/about.html'], ['copy']);
+  gulp.watch(['src/contact.html'], ['copy']);
 });
 
 gulp.task('copy', function () {
@@ -44,6 +53,12 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('dist/img/'));
 
   gulp.src('src/index.html')
+    .pipe(gulp.dest('dist'));
+
+  gulp.src('src/about.html')
+    .pipe(gulp.dest('dist'));
+
+  gulp.src('src/contact.html')
     .pipe(gulp.dest('dist'));
 });
 
@@ -65,6 +80,5 @@ gulp.task('default', [
   'vueify',
   'sass',
   'copy',
-  // 'deploy'
-  ]
-);
+  'ttf2woff'
+]);

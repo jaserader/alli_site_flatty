@@ -3,6 +3,11 @@
 @import "portfolio";
 @import "footer";
 
+@font-face {
+   font-family: 'tamoro';
+   src: url('fonts/TamoroScript.woff');
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
@@ -11,5 +16,4 @@
 
 body{
   margin: 0;
-  // height: 100vh;
 }

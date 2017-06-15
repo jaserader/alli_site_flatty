@@ -4,7 +4,8 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 750px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 10px; }
 
 .header-logo {
   background-image: url("../img/logo_photography.png");
@@ -18,15 +19,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 15px; }
+  padding-top: 25px; }
 
 .header-link {
+  font-family: tamoro, cursive;
   display: flex;
   text-decoration: none;
   width: auto;
   color: #ECB3AE;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 200;
   cursor: pointer; }
 
@@ -55,7 +56,7 @@
   align-content: space-around;
   height: auto;
   width: auto;
-  border: 12px solid #fff;
+  border: 9px solid #fff;
   outline: none;
   padding: 0;
   cursor: pointer; }
@@ -67,20 +68,35 @@
 
 .photo {
   display: flex;
-  height: 215px;
+  height: 205px;
   width: auto;
   border: 3px #C9C9C9 solid;
   border-radius: 3px; }
 
 footer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   position: fixed;
   bottom: 0;
   background: #fff;
-  border-top: 1px solid #C9C9C9; }
+  border-top: 2px solid #C9C9C9; }
+
+.spacer {
+  display: flex;
+  justify-content: flex-start;
+  width: 250px;
+  color: #fff; }
+
+.copy-right {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 14px;
+  color: #757575;
+  align-self: center; }
 
 .footer-nav {
-  margin: 0 auto;
   display: flex;
   justify-content: flex-end; }
 
@@ -96,6 +112,10 @@ footer {
 .footer-link:hover {
   transition: all 0.35s;
   color: #B9807B; }
+
+@font-face {
+  font-family: 'tamoro';
+  src: url("fonts/TamoroScript.woff"); }
 
 * {
   box-sizing: border-box;
